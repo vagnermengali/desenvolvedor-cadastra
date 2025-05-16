@@ -1,9 +1,9 @@
 {
-n  "version": "1.0.0",
+  "version": "1.0.0",
   "description": "Desafio da Cadastra para novos colaboradores",
   "main": "index.js",
   "scripts": {
-    "start": "node_modules/.bin/cross-env SERVER_API=http://localhost:5000 npm-run-all --parallel dev server",
+    "start": "cross-env SERVER_API=http://localhost:5000 npm-run-all --parallel dev server",
     "start:gp": "npm-run-all --parallel dev server",
     "dev": "gulp",
     "server": "json-server ./db.json --port 5000"
@@ -19,20 +19,27 @@ n  "version": "1.0.0",
   },
   "homepage": "https://github.com/Cadastra-Next-Gen-Company/desenvolvedor-cadastra#readme",
   "devDependencies": {
+    "@types/react": "^19.1.4",
+    "@types/react-dom": "^19.1.5",
     "browser-sync": "^2.27.7",
+    "css-loader": "^7.1.2",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
     "npm-run-all": "^4.1.5",
-    "sass": "^1.43.4",
+    "sass": "^1.89.0",
+    "sass-loader": "^16.0.5",
+    "style-loader": "^4.0.0",
     "ts-loader": "^9.4.1",
     "typescript": "^4.9.3",
     "webpack": "^5.62.1"
   },
   "dependencies": {
     "cross-env": "^7.0.3",
-    "json-server": "^0.17.0"
+    "json-server": "^0.17.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   }
 }
