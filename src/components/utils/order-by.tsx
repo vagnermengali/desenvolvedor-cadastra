@@ -54,7 +54,7 @@ export const OrderBy = ({ sortOption, setSortOption }: OrderByProps) => {
         }}
       >
         <span>{selectedLabel}</span>
-        <span aria-hidden="true" className={`order-by__arrow ${open ? "-open" : ""}`}>
+        <span aria-hidden="true" className={`order-by__arrow${open ? "-open" : ""}`}>
           <Icons.arrow />
         </span>
       </div>

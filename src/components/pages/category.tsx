@@ -149,7 +149,7 @@ const Category = () => {
             selectedPrices={selectedPrices}
             setSelectedPrices={setSelectedPrices}
           />
-          <div>
+          <div className="category__product-list-container">
             <div className="category__product-list">
               {visibleProducts.map((product, index) => (
                 <Product

@@ -44,7 +44,7 @@ export const Filter = ({
 
   return (
     <aside className="filter">
-      <div className="filter-group">
+      <div className="filter__group">
         <h4>CORES</h4>
         {colors.map((color) => (
           <label key={color}>
@@ -60,20 +60,22 @@ export const Filter = ({
         ))}
       </div>
 
-      <div className="filter-group">
+      <div className="filter__group">
         <h4>TAMANHOS</h4>
-        {sizes.map((size) => (
-          <button
-            key={size}
-            onClick={() => toggleItem(size, selectedSizes, setSelectedSizes)}
-            className={selectedSizes.includes(size) ? "active" : ""}
-          >
-            {size}
-          </button>
-        ))}
+        <div className="filter__row">
+          {sizes.map((size) => (
+            <button
+              key={size}
+              onClick={() => toggleItem(size, selectedSizes, setSelectedSizes)}
+              className={selectedSizes.includes(size) ? "active" : ""}
+            >
+              {size}
+            </button>
+          ))}
+        </div>
       </div>
 
-      <div className="filter-group">
+      <div className="filter__group">
         <h4>FAIXA DE PREÇO</h4>
         {priceRanges.map((range) => (
           <label key={range}>

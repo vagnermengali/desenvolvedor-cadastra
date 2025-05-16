@@ -3,18 +3,19 @@
 @use "footer";
 @use "product";
 @use "order-by";
+@use "filter";
 
 .category {
-  max-width: calc(1177px + 2rem);
+  max-width: 1177px;
   margin: 0 auto;
   width: 100%;
-  padding: 0 2rem;
 
   &__header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 40px 0 54px 0;
+    padding: 0 2rem;
   }
 
   &__title {
@@ -31,6 +32,7 @@
     align-items: flex-start;
     justify-content: space-between;
     gap: 43px;
+    padding: 0 2rem;
   }
 
   &__show-more-button {
@@ -61,12 +63,15 @@
     gap: 43px 64px;
   }
 
-  @media (max-width: 768px) {
-    padding: 0;
+  &__product-list-container {
+    width: 100%;
+  }
 
+  @media (max-width: 768px) {
     &__header {
       margin: 24px 0 0 0;
       padding: 0 1rem;
+      justify-content: center;
 
       .order-by {
         display: none;
@@ -81,10 +86,10 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 18px;
-      padding: 0 1rem;
     }
 
     &__content {
+      padding: 0 1rem;
       .filter {
         display: none;
       }
