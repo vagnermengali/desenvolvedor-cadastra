@@ -1,0 +1,27 @@
+.filter-and-order-by {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__button {
+    width: 171px;
+    height: 49px;
+    border: 1px solid #666666;
+    font-family: Open Sans;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #666666;
+    cursor: pointer;
+    background: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    outline: none;
+  }
+
+  @media (max-width: 768px) {
+    &__button {
+      margin: 22px 0 34px 0;
+    }
+  }
+}

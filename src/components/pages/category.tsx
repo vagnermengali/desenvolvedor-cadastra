@@ -5,6 +5,7 @@ import { OrderBy } from "../utils/order-by";
 import { Filter } from "../utils/filter";
 import { Product } from "../utils/product";
 import { ShowMore } from "../utils/show-more";
+import { FilterAndOrderBy } from "../utils/filter-and-order-by";
 
 type ProductType = {
   id: string;
@@ -139,6 +140,7 @@ const Category = () => {
         <div className="category__header">
           <h1 className="category__title">Blusas</h1>
           <OrderBy setSortOption={setSortOption} sortOption={sortOption} />
+          <FilterAndOrderBy />
         </div>
         <div className="category__content">
           <Filter

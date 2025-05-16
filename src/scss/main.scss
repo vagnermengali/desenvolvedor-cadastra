@@ -4,6 +4,8 @@
 @use "product";
 @use "order-by";
 @use "filter";
+@use "sidebar";
+@use "filter-and-order-by";
 
 .category {
   max-width: 1177px;
@@ -16,6 +18,11 @@
     justify-content: space-between;
     margin: 40px 0 54px 0;
     padding: 0 2rem;
+
+    .sidebar__overlay,
+    .filter-and-order-by {
+      display: none;
+    }
   }
 
   &__title {
@@ -72,9 +79,15 @@
       margin: 24px 0 0 0;
       padding: 0 1rem;
       justify-content: center;
+      flex-direction: column;
 
       .order-by {
         display: none;
+      }
+
+      .sidebar__overlay,
+      .filter-and-order-by {
+        display: flex;
       }
     }
 
