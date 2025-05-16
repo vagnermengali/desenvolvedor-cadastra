@@ -42,6 +42,50 @@ Estamos em busca de Pessoas Desenvolvedoras `Front-end`, com sólidos conhecimen
 
 O layout se encontra no [figma](https://www.figma.com/file/Z5RCG3Ewzwm7XIPuhMUsBZ/Desafio-Cadastra?type=design&node-id=0%3A1&mode=design&t=A0G2fRjMSrcQjchw-1).
 
+---
+
+## ⚙️ Setup do projeto
+
+[contatovagnermengali@gmail.com](mailto:contatovagnermengali@gmail.com)
+
+### Pré-requisitos
+
+- Node.js versão 14 ou superior  
+- NPM instalado  
+
+### Passo a passo para rodar o projeto
+
+#### 1. Clone o repositório
+
+```bash
+git clone https://github.com/vagnermengali/desenvolvedor-cadastra.git
+```
+
+#### 2. Acesse a pasta do projeto
+
+```bash
+cd desenvolvedor-cadastra
+```
+
+#### 3. Instale as dependências
+
+```bash
+npm install
+```
+
+#### 4. Inicie o servidor de desenvolvimento
+
+```bash
+npm run start
+```
+
+Esse comando irá levantar dois servidores:
+
+- Front-end: [http://localhost:3000](http://localhost:3000)  
+- API (JSON Server): [http://localhost:5000/products](http://localhost:5000/products)  
+
+---
+
 ### Dependências
 
 O projeto possui um setup pronto no qual há a necessidade de possuir o nodejs instalado na versão 14 ou superior.

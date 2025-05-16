@@ -140,7 +140,16 @@ const Category = () => {
         <div className="category__header">
           <h1 className="category__title">Blusas</h1>
           <OrderBy setSortOption={setSortOption} sortOption={sortOption} />
-          <FilterAndOrderBy />
+          <FilterAndOrderBy
+            setSortOption={setSortOption}
+            sortOption={sortOption}
+            selectedColors={selectedColors}
+            setSelectedColors={setSelectedColors}
+            selectedSizes={selectedSizes}
+            setSelectedSizes={setSelectedSizes}
+            selectedPrices={selectedPrices}
+            setSelectedPrices={setSelectedPrices}
+          />
         </div>
         <div className="category__content">
           <Filter

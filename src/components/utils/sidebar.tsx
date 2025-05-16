@@ -10,7 +10,7 @@ type SidebarProps = {
 
 export const Sidebar = ({ isOpen, onClose, children, title }: SidebarProps) => {
   return (
-    <div className={`sidebar__overlay ${isOpen ? "open" : ""}`} onClick={onClose}>
+    <div className={`sidebar__overlay ${isOpen ? "open" : ""}`}>
       <div className="sidebar">
         <div className="sidebar__header">
           <h2>{title}</h2>
